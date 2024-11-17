@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular Eccomerce Product List</title>
+</head>
+<body>
+  <div class="product-grid">
+  <div *ngFor="let product of productList" class="product-grid__item">
+    <img
+      class="product-grid__image"
+      [src]="product.imageUrl"
+    />
+    <h2 class="product-grid__name">{{ product.name }}</h2>
+    <p class="product-grid__price">₱{{ product.price }}</p>
+    <button class="product-grid__button">Add to Cart</button>
+  </div>
+  </div>
+</body>
+</html>
